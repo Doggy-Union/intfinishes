@@ -1,0 +1,21 @@
+{
+  "name": "intfinishes",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "form-data": "^2.2.0",
+    "jade": "latest",
+    "keystone": "https://github.com/Doggy-Union/keystone/tarball/master",
+    "multer": "^1.3.0",
+    "underscore": "latest"
+  },
+  "engines": {
+    "node": "latest",
+    "npm": "latest"
+  },
+  "scripts": {
+    "start": "node start.js"
+  },
+  "main": "start.js"
+}

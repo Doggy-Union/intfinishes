@@ -1,0 +1,132 @@
+﻿html
+  head
+    title  dos
+    script(src='https://use.fontawesome.com/98b531be56.js')
+    link(rel='stylesheet', href='style.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.css')
+    meta(name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0")
+  body
+    section.first
+      p
+        | Как сделать
+        wbr
+        |  интерьер вашей
+        wbr
+        |  бани 
+        strong уютным
+        |  и 
+        wbr
+        | со 
+        strong вкусом
+        | ?
+    section.second
+      p Закажите его у профессионалов
+      .buttonWrapper
+        button.action Узнать больше
+    section.offers
+      h1 Мы предлагаем:
+      ul
+        li
+          i.fa.fa-info-circle(aria-hidden='true')
+          | 					Первое
+          .bitMore * set alias zero one
+          i.fa.fa-angle-down(aria-hidden='true')
+        li
+          i.fa.fa-info-circle(aria-hidden='true')
+          | 					Второе
+          .bitMore A вот тут пусто)
+          i.fa.fa-angle-down(aria-hidden='true')
+        li
+          i.fa.fa-info-circle(aria-hidden='true')
+          | 					Третье
+          .bitMore За здоровье молодых душ
+          i.fa.fa-angle-down(aria-hidden='true')
+        li
+          i.fa.fa-info-circle(aria-hidden='true')
+          | 					Десятое
+          .bitMore Перед одиннадцатым
+          i.fa.fa-angle-down(aria-hidden='true')
+        li
+          i.fa.fa-info-circle(aria-hidden='true')
+          | 					И компот
+          .bitMore Вишня без косточек
+          i.fa.fa-angle-down(aria-hidden='true')
+        li
+          i.fa.fa-info-circle(aria-hidden='true')
+          | 					С чаем
+          .bitMore Нежный комплимент мяты
+          i.fa.fa-angle-down(aria-hidden='true')
+    section.feedback
+      h1 Отзывы наших клиентов
+      article
+        .client
+          .avatar(style='background-image: url(trump.jpg);')
+          p.name  MC H
+        p
+          | MY NAME IS MC H I GOT A BIG DATES. IT'S A BASE, OH YEAH IT'S A MIXTURE.
+      article
+        .client
+          .avatar(style='background-image: url(trump.jpg);')
+          p.name  Догги Трамп
+        p
+          | GOD DAMMIT MY NAME IS TRAMP AND MY COUNTRY NOT AS GREAT AS THIS BOYZ.
+    section.portfolio
+      .swiper-container.slider-wrapper
+           .swiper-wrapper
+            for slide in slides
+             .swiper-slide
+               img.swiper-lazy(data-src="#{slide.image}")
+    section.contacts
+      h1 Контакты
+      div
+        i.fa.fa-phone(aria-hidden='true')
+        |  8(xxx)-yyy-zzz-b
+      div
+        i.fa.fa-phone(aria-hidden='true')
+        |  +7(xxx)-yyy-zzz-b
+      div
+        i.fa.fa-envelope(aria-hidden='true')
+        |  mail@example.com
+    footer
+      div
+        | Внутренняя отделка бань и саун, 
+        br
+        | Оренбург и по области.
+      .toRight
+        | Сделайте вашу баню уютной и
+        br
+        | сделанной со вкусом!
+      .toRight.dev
+        | Designed and Developed by 
+        mark DevShift
+      .toRight.dev
+        | Спроектировано и разработано 
+        mark DevShift
+    script(src='https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/js/swiper.min.js')
+    script.
+      var mySwiper = new Swiper ('.swiper-container', {
+      // Optional parameters
+      direction: 'horizontal',
+      loop: true,
+      lazyLoading: true
+      // If we need pagination
+      //- pagination: '.swiper-pagination',
+      //- // Navigation arrows
+      //- nextButton: '.swiper-button-next',
+      //- prevButton: '.swiper-button-prev',
+      //- // And if we need scrollbar
+      //- scrollbar: '.swiper-scrollbar',
+      })
+
+    script.
+      var mores = document.querySelectorAll('.fa.fa-angle-down');
+      mores.forEach(
+      function(e) {
+      e.addEventListener('click', showMore);
+      });
+      function showMore(ev) {
+      ev.target.parentNode.classList.toggle('showMore');
+      }
+      var sliderEl = document.querySelector('.slider-wrapper');
+      var slider = new Swiper('.slider-wrapper', { lazyLoading: true });

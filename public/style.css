@@ -1,0 +1,180 @@
+﻿body {
+				font-family: "Yanone Kaffeesatz", sans-serif;
+				margin: 0;
+				padding: 0;
+				font-size: 20px;
+			}
+			.buttonWrapper {
+				text-align: center;
+			}
+			button {
+				display: inline-block;
+			}
+			section {
+				box-sizing: border-box;
+				min-height: 50vh;
+			}
+			.first {
+				font-family: "Yanone Kaffeesatz", sans-serif;
+				background-image: url(pattern.png);
+				font-weight: 300;
+			}
+			.second {
+				font-family: "Yanone Kaffeesatz", sans-serif;
+				color: white;
+				background-image: url(drevo.jpg);
+			}
+			section > p {
+				margin: 0;
+				padding: 0.6em 1em;
+				font-size: 2em;
+			}
+			.action {
+				font-size: 1.75em;
+				background-color: #50b09b;
+				border: none;
+				border-radius: 15px;
+				color: white;
+				text-align: center;
+				height: 80px;
+				line-height: 83px;
+				min-width: 95%;
+				font-family: "Yanone Kaffeesatz", sans-serif;
+			}
+			
+			ul {
+				list-style-type: none;
+				padding: 0 1em;
+				margin: 0;
+			}
+			li {
+				position: relative;
+				margin: 0;
+				padding: 10px 0 10px 0;
+				border-bottom: 3px solid #e8e8e8;
+				font-size: 28pt;
+				transition: 2s;
+			}
+			li:last-child {
+				border-bottom: none;
+			}
+			.offers {
+				color: #6c6c6c;
+				font-weight: 300;
+			}
+			h1 {
+				font-size: 36pt;
+				font-weight: 300;
+				text-align: center;
+				padding: 10px;
+				margin: 0;
+			}
+			.feedback {
+				background: url(bain.jpg) fixed;
+				color: white;
+				padding: 2em 0.1em;
+			}
+			.avatar {
+				border: 2px solid white;
+				border-radius: 50px;
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: cover;
+				width: 100px;
+				height: 100px;
+				display: inline-block;
+				vertical-align: middle;
+			}
+			.name {
+				display: inline-block;
+				font-size: 28pt;
+				vertical-align: middle;
+			}
+			article > p {
+				margin: 1em;
+			}
+			article {
+				margin: 0.3em 1em;
+			}
+			.fa.fa-angle-down {
+				display: inline-block;
+				vertical-align: middle;
+				float: right;
+				color: #50b09b;
+				position: absolute;
+				right: 0;
+				top: 0.25em;
+				transition: 1s ease-out;
+			}
+			.fa.fa-info-circle {
+				font-size: 20pt;
+				display: inline-block;
+			}
+			.slider-wrapper {
+				border: 3px solid #50b09b;
+				width: 80%;
+				margin: 1em;
+				height: 100%;
+				display: inline-block;
+			}
+			.portfolio {
+				text-align: center;
+			}
+			.contacts {
+				position: relative;
+				color: 6c6c6c;
+			}
+			.contacts > div {
+				font-size: 32pt;
+				width: 100%;
+				display: inline-block;
+				text-align: center;
+			}
+			.contacts .fa {
+				color: #50b09b;
+			}
+			footer {
+				background: #1f1f1f;
+			}
+			footer > div {
+				color: #a2a2a2;
+				padding: 0.3em 1em;
+			}
+			.toRight {
+				text-align: right;
+			}
+			.dev {
+				margin: 0;
+				padding: 0;
+			}
+			.dev > mark {
+				background: inherit;
+				font-weight: 900;
+				color: #185de7;
+			}
+			.bitMore {
+				max-height: 0px;
+				transition: 1s;
+				font-size: 22pt;
+				font-style: italic;
+				text-align: right;
+				overflow: hidden;
+				padding-right: 0.3em;
+			}
+			.showMore .bitMore {
+				max-height: 3em;
+			}
+			
+			.showMore > .fa.fa-angle-down {
+				transform: rotate(180deg);
+			}
+
+			.swiper-slide > img {
+				max-width: 100%;
+			}
+
+			.swiper-slide {
+				display: flex;
+				flex-direction: column;
+				justify-content: space-around;
+			}
